@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador / Desencriptador</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="reset.css">
+    </head>
+    <body>
+        <header>
+            <p class="letra">a</p>
+        </header>
+        <main>
+            <textarea id="textoantes" class="ingreso"> Ingrese texto aquí</textarea>
+            <img class="rectangulo" src="Rectangle.png">
+            <textarea class="textodespues"></textarea>
+            <div id="espacio" class="textodesaparece">
+                <img class="muneco" src="Muneco.png">
+                <p class="texto1">Ningun mensaje fue encontrado</p>
+                <p class="texto2">Ingresa el texto que desees encriptar o desencriptar</p> 
+            </div>
+            <button id="boton1" class="encriptar"><p class="textoboton1"> Encriptar</p></button>
+            <button id="boton2" class="desencriptar"><p class="textoboton2">Desencriptar</p></button>
+            <button id="boton3" class="copiar"><p class="textoboton3">Copiar</p></button>
+            <p class="textoaviso">Solo letras minusculas y sin acentos</p>
+            <img class="adv" src="advertencia.png">
+            <script>
+                var texto=document.querySelector("textarea");
+                var boton1=document.querySelector("#boton1");
+                var boton2=document.querySelector("#boton2");
+                var boton3=document.querySelector("#boton3");
+                var textodesp=document.querySelector(".textodespues");
+                var textoantiguo=document.querySelector(".ingreso");
+                function eliminar(){
+                    var nuevotexto="";
+                    for(var cont=0;cont<texto.value.length;cont++){
+                        if(texto.value[cont]=="a"||texto.value[cont]=="e"||texto.value[cont]=="i"||texto.value[cont]=="o"||texto.value[cont]=="u"){
+                            
+                            if(texto.value[cont]=="a"){
+                            nuevotexto=nuevotexto+"ai";
+                            }
+                            if(texto.value[cont]=="e"){
+                            nuevotexto=nuevotexto+"enter";
+                            }
+                            if(texto.value[cont]=="i"){
+                            nuevotexto=nuevotexto+"imes";
+                            }
+                            if(texto.value[cont]=="o"){
+                            nuevotexto=nuevotexto+"ober";
+                            }
+                            if(texto.value[cont]=="u"){
+                            nuevotexto=nuevotexto+"ufat";
+                            }
+                        }
+                        else{
+                            nuevotexto=nuevotexto+texto.value[cont];
+                        }
+                    }
+                    document.getElementById("espacio").style.display = "none";
+                    textodesp.value=nuevotexto;
+                    textoantiguo.value="";
+                    textoantiguo.focus();
+                }
+                function desencriptar(){
+                    var nuevotexto2="";
+                    for(var cont=0;cont<texto.value.length;cont++){
+
+                        if(texto.value[cont]=="a"){
+                            
+                            if(texto.value[cont+1]=="i"){
+                                cont=cont+2;
+                            }
+                        nuevotexto2=nuevotexto2+"a";
+                        }
+                        if(cont<texto.value.length){
+                            if(texto.value[cont]=="e"||texto.value[cont]=="i"||texto.value[cont]=="o"||texto.value[cont]=="u"){
+
+                                if(texto.value[cont]=="e"){
+                                cont=cont+4;
+                                nuevotexto2=nuevotexto2+"e";
+                                }
+                                if(texto.value[cont]=="i"){
+                                cont=cont+3;
+                                nuevotexto2=nuevotexto2+"i";
+                                }
+                                if(texto.value[cont]=="o"){
+                                cont=cont+3;
+                                nuevotexto2=nuevotexto2+"o";
+                                }
+                                if(texto.value[cont]=="u"){
+                                cont=cont+3;
+                                nuevotexto2=nuevotexto2+"u";
+                                }
+                            }
+                            else{
+                                nuevotexto2=nuevotexto2+texto.value[cont];
+                            }
+                        }
+                    }
+                    document.getElementById("espacio").style.display = "none";
+                    textodesp.value=nuevotexto2;
+                    textoantiguo.value="";
+                    textoantiguo.focus();
+                }
+                function copiar(){
+                    textodesp.select();
+                    document.execCommand("copy");
+                }
+                function subrayar(){
+                    textoantiguo.select();
+                }
+                boton1.onclick=eliminar;
+                boton2.onclick=desencriptar;
+                boton3.onclick=copiar;
+                textoantiguo.onclick=subrayar;
+            </script>
+        </main>
+        <footer>
+            <p>Pagina creada por: Javier Chiliquinga</p>
+            <p>javierchiliquingalema@gmail.com</p>
+        </footer>
+    </body>
+</html>

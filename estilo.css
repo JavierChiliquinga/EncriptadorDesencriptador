@@ -1,0 +1,434 @@
+html{
+    background-color: #f3f5fc;
+}
+main{
+    /*width: 1440px;*/
+    /*height:1024px;*/
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.ingreso{
+    background:  #f3f5fc;
+    /*width: 577px;*/
+    width:40%;
+    /*height: 600px;*/
+    height: 58.6%;
+    position:absolute;
+    /*top: 168px;*/
+    top:16.4%;
+    /*left: 240px;*/
+    left:16.6%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border-color: #f3f5fc;
+}
+.textodespues{
+    position: absolute;
+    /*width: 336px;*/
+    width: 23.33%;
+    /*height: 781px;*/
+    height: 76.27%;
+    /*left: 1032px;*/
+    left:71.67%;
+    /*top: 72px;*/
+    top:7.03%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    /*text-align: center;*/
+    border-style: hidden;
+    text-align: center;
+}
+.letra{
+    font-size: 50px;
+    color: darkblue;
+    font-style: italic;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    /*top: 40px;*/
+    top: 3.9%;
+    /*left: 84px;*/
+    left: 5.83%;
+}
+.texto1{
+    /*width: 300px;*/
+    width: 20.83%;
+    /*height: 58px;*/
+    height: 5.66%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    position: absolute;
+    text-align: center;
+    /*top: 619px;*/
+    top:60.45% ;
+    /*left: 1044px;*/
+    left: 72.5%;
+}
+.texto2{
+    /*width: 300px;*/
+    width: 20.83%;
+    /*height: 48px;*/
+    height: 4.68%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    position: absolute;
+    /*top: 693px;*/
+    top: 70%;
+    /*left: 1044px;*/
+    left: 72.5%;
+}
+.rectangulo{
+    position: absolute;
+    /*width: 400px;*/
+    width: 27.77%;
+    /*height: 944px;*/
+    height: 92.2%;
+    /*left: 1000px;*/
+    left: 69.4%;
+    /*top: 40px;*/
+    top: 3.9%;
+    border-radius: 32px;
+}
+.muneco{
+    position: absolute;
+    /*width: 336px;*/
+    width: 23.3%;
+    /*height: 304px;*/
+    height: 29.7%;
+    /*left: 1032px;*/
+    left: 71.67%;
+    /*top: 283px;*/
+    top: 27.6%;
+
+}
+.encriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+    /*width: 328px;*/
+    width: 22.8%;
+    /*height: 67px;*/
+    height: 6.54%;
+    background: #0A3871;
+    border-radius: 24px;
+    position:absolute;
+    /*top: 885px;*/
+    top: 86.4%;
+    /*left: 240px;*/
+    left:16.7% ;
+    cursor: pointer;
+    text-align: center;
+}
+.textoboton1{
+    /*width: 280px;*/
+    width: 19.4%;
+    /*height: 19px;*/
+    height: 1.85%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align:center;
+    margin-left: 100px;
+    color: #FFFFFF;
+}
+.textoboton2{
+   /*width: 280px;*/
+    width:19.4% ;
+    /*height: 19px;*/
+    height:1.85% ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align:center;
+    margin-left: 95px;
+    color: #0A3871;
+}
+.textoboton3{
+    /*width: 288px;*/
+    width:20% ;
+    /*height: 19px;*/
+    height:1.85% ;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-left: 100px;
+    color: #0A3871;
+    
+}
+.desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+    /*width: 328px;*/
+    width:22.78%;
+    /*height: 67px;*/
+    height: 6.54%;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    position:absolute;
+    /*top: 885px;*/
+    top: 86.4%;
+    /*left: 592px;*/
+    left: 41.1%;
+    cursor: pointer;
+}
+.copiar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+    /*width: 328px;*/
+    width: 22.78%;
+    /*height: 67px;*/
+    height: 6.54% ;
+    background:white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    position:absolute;
+    /*top: 885px;*/
+    top:86.42% ;
+    /*left: 1032px;*/
+    left: 71.67%;
+    cursor: pointer;
+    text-align: center;
+}
+.textoaviso{
+    position: absolute;
+    /*top: 860px;*/
+    top: 83.5%;
+    /*left: 264px;*/
+    left: 18.33%;
+    /*width: 205px;*/
+    width: 14.24%;
+    /*height: 18px;*/
+    height: 1.76%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+.adv{
+    /*width: 16px;*/
+    width: 1.11%;
+    /*height: 16px;*/
+    height: 1.56%;
+    position: absolute;
+    /*top: 860px;*/
+    top: 84%;
+    /*left: 240px;*/
+    left: 16.67%;
+
+}
+footer{
+    background: #868E96;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+footer p{
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+}
+/*Configuracion tablet*/
+@media screen and (min-width:480px ) and (max-width:860px){
+   .ingreso{
+    width: 90%;
+    padding: 0 0;
+    position: absolute;
+    left: 5%;
+    height: 45%;
+    font-size: 2em;
+   }
+   .rectangulo, .textodespues{
+    width: 90%;
+    position: absolute;
+    left:5%;
+    border-radius: 30px;
+    top: 75%;
+    height: 20%;
+   }
+   .muneco{
+    display: none;
+   }
+   .texto1{
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 5%;
+    font-size: 2em;
+   }
+   .encriptar, .desencriptar{
+    width:42.5%;
+    position: absolute;
+    top: 65%;
+   }
+   .encriptar{
+    left: 5%;
+   }
+   .desencriptar{
+    left: 52.5%;
+   }
+   .textoboton1, .textoboton2, .textoboton3{
+    padding: inherit;
+    font-size: 2em;
+   }
+   .textoaviso{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 62%;
+    font-size: 1em;
+   }
+   .adv{
+    position: absolute;
+    left: 8%;
+    top: 62%;
+   }
+   .texto2{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 85%;
+    font-size: 1.5em;
+    text-align: center;
+   }
+   .copiar{
+    width:40%;
+    height: 5%;
+    position: absolute;
+    top: 90%;
+    left: 30%;
+   }
+
+}
+/*configuracion celular*/
+@media screen and (max-width:480px) {
+    .ingreso{
+        width: 90%;
+        padding: 0 0;
+        position: absolute;
+        left: 5%;
+        height: 35%;
+        font-size: 2em;
+        top: 10%;
+       }
+       .rectangulo, .textodespues{
+        width: 90%;
+        position: absolute;
+        left:5%;
+        border-radius: 30px;
+        top: 65%;
+        height: 20%;
+       }
+       .muneco{
+        display: none;
+       }
+       .texto1{
+        width: 90%;
+        position: absolute;
+        text-align: center;
+        top: 65%;
+        left: 5%;
+        font-size: 2em;
+       }
+       .encriptar{
+        width:90%;
+        height: 7%;
+        position: absolute;
+        top: 45%;
+        left: 5%;
+       }
+       .desencriptar{
+        width:90%;
+        height: 7%;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+       }
+       .textoboton1, .textoboton2, .textoboton3{
+        padding: inherit;
+        font-size: 1.5em;
+        text-align: center;
+        margin-left: 0;
+        line-height: 0;
+       }
+       .textoboton1{
+        margin-left: 35%;
+       }
+       .textoboton2{
+        margin-left: 30%;
+       }
+       .textoboton3{
+        margin-left: 20%;
+       }
+       .textoaviso{
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 42%;
+        font-size: 1em;
+       }
+       .adv{
+        position: absolute;
+        left: 6%;
+        width: 3%;
+        top: 42.7%;
+       }
+       .texto2{
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 76%;
+        font-size: 1.5em;
+        text-align: center;
+       }
+       .copiar{
+        width:40%;
+        height: 5%;
+        position: absolute;
+        top: 87%;
+        left: 30%;
+        text-align: center;
+       }   
+       .letra{
+        top:1%
+       }
+}
